@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Escolar Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Atalho de acessibilidade para navegação por teclado -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
+    <header class="cabecalho">
+        <div class="container flex-cabecalho">
+            <h1 class="logo">🏫 Mapa Escolar Acessível</h1>
+            
+            <nav aria-label="Navegação Principal">
+                <ul class="menu-navegacao">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#mapa">Mapa Interativo</a></li>
+                    <li><a href="#ambientes">Ambientes</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+
+        <!-- SEÇÃO INICIAL -->
+        <section id="inicio" class="secao-hero">
+            <div class="container">
+                <h2>Guia e Localização dos Espaços da Escola</h2>
+                <p class="subtitulo">Explore a infraestrutura da nossa escola de forma simples, visual e acessível.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO MAPA INTERATIVO DA ESCOLA -->
+        <section id="mapa" class="secao container">
+            <h2>Mapa Visual da Escola</h2>
+            <p class="instrucao">Clique ou navegue com o teclado pelos blocos do mapa para ir direto à descrição de cada ambiente:</p>
+            
+            <div class="grid-mapa-interativo" role="region" aria-label="Representação do Planta Baixa da Escola">
+                <a href="#entrada" class="bloco-mapa entrada">
+                    <span class="icone" aria-hidden="true">🏫</span>
+                    <span class="nome-espaco">Entrada</span>
+                </a>
+                <a href="#secretaria" class="bloco-mapa secretaria">
+                    <span class="icone" aria-hidden="true">🏢</span>
+                    <span class="nome-espaco">Secretaria</span>
+                </a>
+                <a href="#salas" class="bloco-mapa salas">
+                    <span class="icone" aria-hidden="true">📚</span>
+                    <span class="nome-espaco">Sala de Aula</span>
+                </a>
+                <a href="#biblioteca" class="bloco-mapa biblioteca">
+                    <span class="icone" aria-hidden="true">📖</span>
+                    <span class="nome-espaco">Biblioteca</span>
+                </a>
+                <a href="#patio" class="bloco-mapa patio">
+                    <span class="icone" aria-hidden="true">🌳</span>
+                    <span class="nome-espaco">Pátio</span>
+                </a>
+                <a href="#professores" class="bloco-mapa professores">
+                    <span class="icone" aria-hidden="true">👩‍🏫</span>
+                    <span class="nome-espaco">Sala dos Professores</span>
+                </a>
+                <a href="#refeitorio" class="bloco-mapa refeitorio">
+                    <span class="icone" aria-hidden="true">🍽️</span>
+                    <span class="nome-espaco">Refeitório</span>
+                </a>
+                <a href="#banheiro" class="bloco-mapa banheiro">
+                    <span class="icone" aria-hidden="true">🚻</span>
+                    <span class="nome-espaco">Banheiro</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DESCRIÇÃO DOS AMBIENTES -->
+        <section id="ambientes" class="secao container">
+            <h2>Descrição dos Ambientes</h2>
+            <div class="lista-ambientes">
+
+                <!-- Entrada -->
+                <article id="entrada" class="card-ambiente">
+                    <div class="cabecalho-card">
+                        <span class="icone-grande" aria-hidden="true">🏫</span>
+                        <h3>Entrada Principal</h3>
+                    </div>
+                    <p>Espaço de acesso e recepção de alunos, professores e visitantes. Possui rampas de acessibilidade e identificação clara na portaria.</p>
+                </article>
+
+                <!-- Secretaria -->
+                <article id="secretaria" class="card-ambiente">
+                    <div class="cabecalho-card">
+                        <span class="icone-grande" aria-hidden="true">🏢</span>
+                        <h3>Secretaria</h3>
+                    </div>
+                    <p>Setor administrativo responsável por matrículas, documentos, atestados e atendimento ao público geral.</p>
+                </article>
+
+                <!-- Sala de aula -->
+                <article id="salas" class="card-ambiente">
+                    <div class="cabecalho-card">
+                        <span class="icone-grande" aria-hidden="true">📚</span>
+                        <h3>Salas de Aula</h3>
+                    </div>
+                    <p>Ambientes destinados às aulas teóricas e atividades em grupo. Equipadas com iluminação adequada, carteiras adaptadas e recursos didáticos.</p>
+                </article>
+
+                <!-- Biblioteca -->
+                <article id="biblioteca" class="card-ambiente">
+                    <div class="cabecalho-card">
+                        <span class="icone-grande" aria-hidden="true">📖</span>
+                        <h3>Biblioteca</h3>
+                    </div>
+                    <p>Local de estudo silencioso, pesquisa e empréstimo de livros. Conta com acervo diversificado e computadores para consultas acadêmicas.</p>
+                </article>
+
+                <!-- Banheiro -->
+                <article id="banheiro" class="card-ambiente">
+                    <div class="cabecalho-card">
+                        <span class="icone-grande" aria-hidden="true">🚻</span>
+                        <h3>Banheiros</h3>
+                    </div>
+                    <p>Sanitários masculinos, femininos e adaptados para pessoas com deficiência física ou mobilidade reduzida.</p>
+                </article>
+
+                <!-- Refeitório -->
+                <article id="refeitorio" class="card-ambiente">
+                    <div class="cabecalho-card">
+                        <span class="icone-grande" aria-hidden="true">🍽️</span>
+                        <h3>Refeitório</h3>
+                    </div>
+                    <p>Área destinada à alimentação dos estudantes e funcionários nos horários de intervalo, equipada com mesas acessíveis e lavatórios.</p>
+                </article>
+
+                <!-- Pátio -->
+                <article id="patio" class="card-ambiente">
+                    <div class="cabecalho-card">
+                        <span class="icone-grande" aria-hidden="true">🌳</span>
+                        <h3>Pátio e Convivência</h3>
+                    </div>
+                    <p>Espaço amplo e ao ar livre utilizado para recreação, integração dos alunos, atividades culturais e eventos escolares.</p>
+                </article>
+
+                <!-- Sala dos professores -->
+                <article id="professores" class="card-ambiente">
+                    <div class="cabecalho-card">
+                        <span class="icone-grande" aria-hidden="true">👩‍🏫</span>
+                        <h3>Sala dos Professores</h3>
+                    </div>
+                    <p>Espaço reservado para reuniões pedagógicas, planejamento de aulas e descanso da equipe docente nos intervalos.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="secao container">
+            <div class="caixa-sobre">
+                <h2>Sobre o Projeto de Acessibilidade</h2>
+                <p>Este mapa interativo foi desenvolvido com o propósito de garantir a **autonomia e orientação de todas as pessoas** no espaço escolar.</p>
+                <p>Atendendo aos padrões de acessibilidade web, o projeto evita o uso exclusivo de cores para identificação, combinando símbolos visuais com textos descritivos claros e alto contraste visual.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Mapa Escolar Acessível — Projeto de Programação Front-End</p>
+            <p>Hospedado via GitHub Pages com suporte total à Acessibilidade Digital.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
